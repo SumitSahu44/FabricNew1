@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    /* Custom Maroon Colors for Tailwind 4 */
+    --color-maroon-50: #fff1f2;
+    --color-maroon-100: #ffe4e6;
+    --color-maroon-200: #fecdd3;
+    --color-maroon-300: #fda4af;
+    --color-maroon-400: #fb7185;
+    --color-maroon-500: #f43f5e;
+    --color-maroon-600: #e11d48;
+    --color-maroon-700: #be123c;
+    --color-maroon-800: #630d16;
+    --color-maroon-900: #4c0a11;
+    --color-maroon-950: #2d060a;
+
+    --shadow-maroon: 0 10px 15px -3px rgba(99, 13, 22, 0.3);
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
