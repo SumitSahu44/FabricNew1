@@ -35,40 +35,45 @@ function App() {
 
   return (
     <div className="bg-[#FCFBF9] min-h-screen font-sans antialiased text-slate-900 overflow-x-hidden flex selection:bg-maroon-800 selection:text-white">
-      
+
       {/* 1. Unified Sidebar */}
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
       {/* 2. Main Viewport */}
       <main className="flex-1 transition-all duration-300 lg:pl-72 p-4 md:p-8 min-h-screen flex flex-col w-full">
-        
-        {/* Modern Header */}
-        <header className="flex justify-between items-center mb-12 py-4">
-          <div className="flex items-center gap-6">
-            {/* Mobile Menu Toggle - Only visible on small screens */}
-            <button 
+
+        {/* Modern Header - Responsive Layout */}
+        <header className="flex justify-between items-center mb-12 py-4 px-2 md:px-0">
+          <div className="hidden max-lg:flex items-center gap-2 md:gap-4 flex-1">
+            {/* Logo - Hidden on large screens, visible on mobile */}
+            <Link to="/" className="active:scale-95 transition-transform flex-shrink-0">
+              <img
+                src="/Parekh  Fabrics.png"
+                alt="Parekh Fabrics"
+                className="h-14 md:h-16 w-auto object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* Middle: e-Quotation button (Mobile centered, Desktop right) */}
+          <div className="hidden md:flex flex-1 flex justify-center lg:justify-end lg:pl-6">
+            <Link
+              to="/e-quotation"
+              className="group relative px-3 py-1.5 md:px-5 md:py-2.5 bg-slate-900 text-white rounded-xl text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] shadow-2xl hover:bg-maroon-800 transition-all duration-500 overflow-hidden active:scale-95 block whitespace-nowrap"
+            >
+              <span className="relative z-10">e-Quotation</span>
+              <div className="absolute inset-0 bg-maroon-700 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+            </Link>
+          </div>
+
+          {/* Right: Mobile Menu Toggle - Only visible on small screens */}
+          <div className="flex-1 hidden max-lg:flex justify-end">
+            <button
               onClick={() => setIsSidebarOpen(true)}
-              className="lg:hidden p-3 bg-white border border-gray-100 rounded-2xl shadow-sm text-maroon-800 active:scale-95 transition-all"
+              className="p-3 bg-white border border-gray-100 rounded-2xl shadow-sm text-maroon-800 active:scale-95 transition-all"
             >
               <Menu size={20} />
             </button>
-
-            <div className="hidden pl-10 md:pl-0 md:flex flex-col">
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-maroon-800">Manufacturing</span>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Export Hub</span>
-            </div>
-            <div className="hidden md:block h-8 w-[1px] bg-slate-100"></div>
-            <p className="hidden sm:block text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none">Ahmedabad Textile Hub</p>
-          </div>
-          
-          <div className="flex items-center gap-4">
-             <Link 
-               to="/e-quotation"
-               className="group relative px-6 py-2.5 bg-slate-900 text-white rounded-xl text-[10px] font-black uppercase tracking-[0.2em] shadow-2xl hover:bg-maroon-800 transition-all duration-500 overflow-hidden active:scale-95 block"
-             >
-                <span className="relative z-10">e-Quotation</span>
-                <div className="absolute inset-0 bg-maroon-700 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-             </Link>
           </div>
         </header>
 

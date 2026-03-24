@@ -72,12 +72,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         </button>
 
         {/* Branding Section */}
-        <div className="p-8 border-b border-gray-50 flex-shrink-0">
-          <h1 className="text-2xl font-black text-maroon-800 tracking-tighter uppercase leading-none">
-            PAREKH <br />
-            <span className="text-gray-300 italic font-medium">FABRICS</span>
-          </h1>
-          <p className="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] mt-2">Ahmedabad Textile Hub</p>
+        <div className="p-8 border-b border-gray-50 flex-shrink-0 flex justify-center">
+          <img 
+            src="/Parekh  Fabrics.png" 
+            alt="Parekh Fabrics" 
+            className="h-20 w-auto object-contain"
+          />
         </div>
 
         {/* Scrollable Navigation Area */}
