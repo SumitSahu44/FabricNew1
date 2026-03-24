@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, MapPin } from 'lucide-react';
+import { MessageCircle, MapPin, Send } from 'lucide-react';
 import FabricChatbot from './FabricChatbot';
 
 export default function FloatingActions() {
@@ -8,20 +8,38 @@ export default function FloatingActions() {
   return (
     <>
       <div className="fixed bottom-8 right-8 flex flex-col gap-4 z-[100]">
-        {/* Google Map Trigger */}
-        <button className="bg-white p-4 rounded-full shadow-2xl text-slate-800 hover:text-maroon-800 transition-all group relative">
+        {/* Google Map Link */}
+        <a 
+          href="https://maps.app.goo.gl/9b1P6G7Yv3v4Y5u7A" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-white p-4 rounded-full shadow-2xl text-slate-800 hover:text-maroon-800 transition-all group relative border border-gray-100"
+        >
           <MapPin size={24} />
           <span className="absolute right-full mr-4 bg-slate-800 text-white text-[10px] px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-bold">
             Ahmedabad Office
           </span>
-        </button>
+        </a>
+
+        {/* WhatsApp Link */}
+        <a 
+          href="https://wa.me/919999999999" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#25D366] p-4 rounded-full shadow-2xl text-white hover:scale-110 transition-all group relative flex items-center justify-center"
+        >
+          <Send size={24} className="rotate-[-45deg] relative left-[2px]" />
+          <span className="absolute right-full mr-4 bg-[#25D366] text-white text-[10px] px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-bold">
+            WhatsApp Us
+          </span>
+        </a>
 
         {/* Floating Chat Bot Trigger */}
         <button 
           onClick={() => setIsChatOpen(!isChatOpen)}
-          className={`bg-[#25D366] p-4 rounded-full shadow-2xl text-white hover:scale-110 transition-all ${!isChatOpen ? 'animate-bounce' : ''}`}
+          className={`bg-maroon-800 p-4 rounded-full shadow-2xl text-white hover:scale-110 transition-all ${!isChatOpen ? 'animate-bounce' : ''} flex items-center justify-center`}
         >
-          <MessageCircle size={24} fill={isChatOpen ? "white" : "currentColor"} />
+          <MessageCircle size={24} fill={isChatOpen ? "white" : "none"} />
         </button>
       </div>
 

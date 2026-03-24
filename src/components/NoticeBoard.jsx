@@ -14,7 +14,7 @@ export default function NoticeBoard() {
         <h3 className="text-xl font-black text-slate-800 uppercase tracking-tighter">Latest Notices & <span className="text-maroon-800">Live Tenders</span></h3>
         <button className="text-xs font-bold uppercase text-maroon-800 tracking-widest hover:underline">View All Notifications</button>
       </div>
-      
+
       <div className="space-y-4">
         {items.map((item, i) => (
           <div key={i} className="flex items-center justify-between p-6 bg-gray-50/50 rounded-2xl hover:bg-maroon-50 transition-colors group">
