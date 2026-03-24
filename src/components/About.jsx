@@ -24,7 +24,7 @@ export default function About() {
             Our commitment to quality, sustainability, and technological innovation has allowed us to grow from a small weaving unit to a vertically integrated textile powerhouse. We believe in "Quality in Every Thread."
           </p>
         </div>
-        
+
         {/* Subtle Decorative Element */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-maroon-50/30 -skew-x-12 transform origin-top-right pointer-events-none"></div>
       </section>
@@ -64,8 +64,8 @@ export default function About() {
           </div>
         </div>
         <div className="rounded-[40px] overflow-hidden shadow-2xl skew-y-2 hover:skew-y-0 transition-all duration-700">
-          <img 
-            src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&auto=format&fit=crop&q=60" 
+          <img
+            src="https://media.istockphoto.com/id/898566242/photo/choosing-a-fabric-color-in-a-store.webp?a=1&b=1&s=612x612&w=0&k=20&c=JGsM8Ttmjhn5Y-WKZb3KmkA6ouk3ktElziyDWnPIYGw="
             alt="Fabric Manufacturing"
             className="w-full h-full object-cover"
           />
