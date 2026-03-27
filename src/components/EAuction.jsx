@@ -17,7 +17,7 @@ const EAuction = () => {
                     <div>
                         <div className="flex items-center gap-3 mb-2">
                             <Gavel className="text-maroon-400" size={24} />
-                            <h2 className="text-3xl font-black uppercase tracking-tighter">e-Auction</h2>
+                            <h2 className="text-3xl font-black uppercase tracking-tighter"><span className="lowercase">e</span>-Auction</h2>
                         </div>
                         <p className="text-slate-400 text-sm font-medium">Live bidding for bulk textile raw materials</p>
                     </div>

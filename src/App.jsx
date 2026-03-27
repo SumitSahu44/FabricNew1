@@ -61,7 +61,7 @@ function App() {
               to="/e-quotation"
               className="group relative px-3 py-1.5 md:px-5 md:py-2.5 bg-slate-900 text-white rounded-xl text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] shadow-2xl hover:bg-maroon-800 transition-all duration-500 overflow-hidden active:scale-95 block whitespace-nowrap"
             >
-              <span className="relative z-10">e-Quotation</span>
+              <span className="relative z-10"><span className="lowercase">e</span>-Quotation</span>
               <div className="absolute inset-0 bg-maroon-700 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
             </Link>
           </div>

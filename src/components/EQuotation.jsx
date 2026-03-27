@@ -33,7 +33,7 @@ const EQuotation = () => {
                 <div>
                     <div className="flex items-center gap-3 mb-2">
                         <Calculator className="text-maroon-800" size={24} />
-                        <h2 className="text-3xl font-black text-maroon-800 uppercase tracking-tighter">e-Quotation</h2>
+                        <h2 className="text-3xl font-black text-maroon-800 uppercase tracking-tighter"><span className="lowercase">e</span>-Quotation</h2>
                     </div>
                     <p className="text-slate-400 text-sm font-medium italic">Get instant bulk pricing for your textile requirements</p>
                 </div>

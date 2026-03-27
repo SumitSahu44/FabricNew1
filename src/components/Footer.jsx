@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-maroon-600 mb-6">Explore</h5>
             <ul className="space-y-4 text-sm font-medium text-gray-400">
-              <li><NavLink to="/e-auction" className="hover:text-white transition-colors">E-Auction</NavLink></li>
+              <li><NavLink to="/e-auction" className="hover:text-white transition-colors">e-Auction</NavLink></li>
               <li><NavLink to="/tenders" className="hover:text-white transition-colors">Tenders</NavLink></li>
               <li><NavLink to="/circulars" className="hover:text-white transition-colors">Circulars</NavLink></li>
               <li><NavLink to="/blog" className="hover:text-white transition-colors">Blog</NavLink></li>
@@ -41,17 +41,17 @@ export default function Footer() {
 
         <div className="rounded-[32px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl h-48 border border-white/5">
           {/* Actual Google Map Embed for Ahmedabad Textile Market */}
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14689.967832653244!2d72.5855!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f5a5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sAhmedabad%20Textile%20Market!5e0!3m2!1sen!2sin!4v1711280000000!5m2!1sen!2sin" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14689.967832653244!2d72.5855!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f5a5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sAhmedabad%20Textile%20Market!5e0!3m2!1sen!2sin!4v1711280000000!5m2!1sen!2sin"
             width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" title="Parekh Fabrics Location"
           ></iframe>
         </div>
       </div>
-      
+
       <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-        <p>Complete Mobile Responsive • SEO Friendly 2026</p>
+        {/* <p>Complete Mobile Responsive • SEO Friendly 2026</p> */}
         <p>Developed with ❤️ for Parekh Fabrics</p>
       </div>
     </footer>
   );
-}
+}
